@@ -3,10 +3,6 @@ class DirectorsController < ApplicationController
     @director = Director.all
   end
 
-  def show
-    @director = Director.find(params[:id])
-  end
-
   def new_form
   end
 
@@ -19,7 +15,7 @@ class DirectorsController < ApplicationController
 
     @director.save
 
-    @movie_id = @movie.id
+    @director_id = @director.id
 
     render("create_row")
   end
@@ -38,6 +34,10 @@ class DirectorsController < ApplicationController
     @director.save
 
     render("show")
+  end
+
+  def show
+    @director = Director.find(params[:id])
   end
 
   def destroy

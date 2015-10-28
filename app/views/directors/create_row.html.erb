@@ -1,25 +1,18 @@
 <div class="page-header">
-  <h1>Movie #<%= @movie_id %></h1>
+  <h1>Director #<%= @director_id %></h1>
 </div>
 
 <dl class="dl-horizontal">
-  <dt>Title</dt>
-  <dd><%= @movie.title %></dd>
+  <dt>Dob</dt>
+  <dd><%= @director.dob %></dd>
 
-  <dt>Year</dt>
-  <dd><%= @movie.year %></dd>
+  <dt>Name</dt>
+  <dd><%= @director.name %></dd>
 
-  <dt>Duration</dt>
-  <dd><%= @movie.duration %></dd>
-
-  <dt>Description</dt>
-  <dd><%= @movie.description %></dd>
-
-  <dt>Director ID</dt>
-  <dd><%= @movie.director_id %></dd>
+  <dt>Bio</dt>
+  <dd><%= @director.bio %></dd>
 
   <dt>Image</dt>
-  <dd><img src="<%= @movie.image_url %>" width="320"></dd>
-
+  <dd><img src="<%= @director.image_url %>" width="320"></dd>
 
 </dl>
